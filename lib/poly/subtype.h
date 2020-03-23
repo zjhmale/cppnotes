@@ -5,6 +5,8 @@
 using namespace std;
 
 namespace poly::subtype {
+    // Subtype polymorphism is also coercion polymorphism
+    // because the derived class gets converted into base class type
     class Felid {
         public:
             // Pure virtual function for subtype polymorphism
