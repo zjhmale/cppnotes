@@ -5,6 +5,7 @@
 using namespace std;
 using namespace poly::subtype;
 using namespace poly::parametric;
+using namespace poly::adhoc;
 
 void mock_subtype() {
     Cat cat;
@@ -23,9 +24,16 @@ void mock_parametric() {
     cout << pmax(foo, bar) << endl;
 }
 
+void mock_adhoc() {
+    cout << add(9, 9) << endl;
+    cout << add("foo", "bar") << endl;
+    cout << pmax("foo", "bar") << endl;
+}
+
 int main(int argc, char** argv) {
     mock_subtype();
     mock_parametric();
+    mock_adhoc();
 
     return 0;
 }
